@@ -4,6 +4,7 @@ body {
     font-family: 'Figtree', sans-serif;
     text-align: center;
     background-color: #f4cf4e;
+    padding-block: 100px;
 
 
 }
@@ -113,6 +114,7 @@ div.attribution {
     padding-top: 100px;
 
 }
+
 
 
 
