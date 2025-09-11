@@ -9,6 +9,7 @@ body {
 }
 
 .square2 {
+    margin-top: 100px;
     background-color: white;
     width: 500px;
     height: 600px;
@@ -113,6 +114,7 @@ div.attribution {
     padding-top: 100px;
 
 }
+
 
 
 
