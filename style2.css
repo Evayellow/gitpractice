@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+body {
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+    background-color: #f4cf4e;
+
+
+}
+
+.square2 {
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto; 
+    align-content: center;
+    border-radius: 15px;
+    /*border-color: #000102;
+    border-width: 5px;*/ 
+    border: 1.5px solid #000; /* this is the black border */ 
+    /* box-shadow: 5px 5px 15px rgba(0,0,0,0.3); /* shadow, but its not a solid shadow*/
+    box-shadow: 5px 5px 0px #000; /* solid shadow */
+
+
+}
+
+.illustration {
+
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+.img1 {
+   margin-left: 5px; 
+   border-radius: 1.5rem;
+   width: 450px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+h4 {
+    text-align: start;
+    margin-left: 30px; 
+
+}
+
+.ysquare {
+
+    background-color: #f4cf4e;
+    width: 100px;
+    height: 25px;
+    margin-left: 30px; 
+    border-radius: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+p {
+
+    font-size: 16px;
+    text-align: start;
+    margin-left: 30px; 
+
+}
+
+header {
+    margin: 0 auto;
+    text-align: start;
+    margin-left: 30px;
+
+}
+
+h1:hover {
+
+    color:#f4cf4e; 
+    cursor: pointer;
+
+}
+
+h3{
+
+    margin: 0 auto;
+    text-align: start;
+    margin-left: 10px;  
+
+    
+}
+
+.avatar {
+    display: flex;
+   /* margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;*/ 
+    align-items: center;
+    margin: 10px 30px;
+   /* background-color: limegreen;*/ 
+}
+
+.img2 {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+div.attribution {
+
+    padding-top: 100px;
+
+}
+
+
