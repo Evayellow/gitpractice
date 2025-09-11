@@ -120,12 +120,10 @@ h1{
 
 }
 
-h4 {
+.h4cc {
 
-    color: hsl(75, 94%, 57%); 
+    color: hsl(75, 94%, 57%);
+    
 }
 
-.square3 h4 {
 
-    color: hsl(15,94%, 57%);
-}
