@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;350;400;700;900&display=swap');
+
+/* Ensure padding and border are included in width calculations */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/*Hopefully this will work?*/
+body {
+
+    background-color:  hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%); 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(212, 21%, 14%);
+
+}   
+
+.newprice {
+
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(158, 36%, 37%);
+    font-weight: 900;
+    /*margin-right: 160px;*/ 
+    margin: 0 auto;
+
+}
+
+.cbutton:hover {
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer; 
+}
+
+.cbutton {
+    background-color: hsl(158, 36%, 37%);
+    width: auto; /*Fills the available space wether it be desktop or mobile */
+    height: 40px;
+    border-radius: 1rem;
+
+    /*NEW  flexbox alignment*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 10px 20px; 
+}
+
+.cbutton .cart {
+
+    width: 14px;
+    height: 14px;
+    display: block;
+
+}
+
+.cart {
+    width: 15px;
+    height: 15px;
+    /*margin: 0; */
+    /*position: relative;
+    left: 90px;
+    top:  15px;*/ 
+    /*position: static; */ 
+    display: block;
+}
+
+.cbutton h4 {
+    all:unset; 
+    color: white;
+   /* margin: 0; */ 
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;     
+
+}
+
+h4{
+
+    color: white; 
+    /*text-align: center;*/     
+    margin: 0;
+    /*position: relative;*/ 
+    position: static; 
+    /*bottom: 5.5px;*/
+    
+}
+
+h3{
+
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+h6 {
+
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    left:145px;
+    bottom: 35px;
+    font-weight: 300;   
+    text-decoration: line-through;
+
+}
+
+p {
+
+    font-size: 14px;
+    font-weight: 350;
+}
+
+.invisbox {
+
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*@media screen and (min-width: 600px) {
+
+}*/ /*We didn't use it anymore because its down below */
+.square5 {
+
+    background-color: white;
+    width:384px;
+    height: 680px;
+    border-radius: 1rem; 
+
+}
+
+img {
+
+    height: 300px;
+    width: 384px; 
+    border-top-left-radius: 1rem; 
+    border-top-right-radius: 1rem;
+
+}
+
+footer {
+
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    text-align: center;
+    padding: 10px 0; 
+    font-size: 14px; 
+}
+
+@media screen and (min-width: 768px) {
+    .square5 {
+        display: flex;              /* put children side by side */
+        width: 700px;               /* wider card */
+        height: 500px;              /* adjust height */
+    }
+
+    .square5 img {
+        width: 50%;                 /* left half for image */
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem 0 0 1rem; /* round only left corners */
+    }
+
+    .invisbox {
+        width: 50%;                 /* right half for text */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;     /* center text vertically */
+        align-items: flex-start;     /* align text to the left */
+        text-align: left;            /* left align paragraphs/headings */
+        padding: 40px;
+    }
+
+    .cbutton {
+        height: 100%;
+        width: 100%;                 /* make button full width of text column */
+
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    footer {
+
+        font-size: 9px;
+    }
+
+}
