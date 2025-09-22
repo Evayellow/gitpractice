@@ -1,0 +1,254 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;350;400;500;600;700;900&display=swap');
+
+body {
+
+    background-color: #fafafa;
+    font-family: 'Poppins','Arial',sans-serif;
+    font-size: 15px; 
+    color: hsl(234, 12%, 34%); 
+}
+
+.Title {
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 80px;
+
+}
+
+.Title1 {
+
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.Title2 {
+
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
+    margin-left: 210px;
+    margin-right: 210px; 
+}
+
+
+.fourcards {
+
+    display: grid; 
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr) ;
+    grid-template-areas:
+    ". card2 ."
+    "card1 card2 card3"
+    "card1 card3 card4"
+    ". card3 .";
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); 
+    justify-content: center;
+    align-content: center;
+    place-content: center;
+
+}
+
+.cardone   { grid-area: card1; }
+.cardtwo   { grid-area: card2; }
+.cardthree { grid-area: card3; }
+.cardfour  { grid-area: card4; }
+
+
+.fourcards:nth-last-child {
+
+    background-color: red !important;
+} Idk if I should use this, i think i am mixing flex and grid and that will cause trouble later....             
+
+
+.grid-col-span-2 {
+
+    grid-column: span 2;
+
+} We no longer need to use this
+
+h2 {
+
+    font-weight: 600;
+
+}
+
+.cardone { parent
+    background-color: white;
+    border-radius: 0.5rem;
+    border-top:4px solid hsl(180, 62%, 55%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem; 
+
+}
+ 
+.icon1 { child 
+    position: static;
+    align-self: flex-end;
+}
+
+
+.cardtwo {
+    background-color: white;
+    border-radius: 0.5rem;
+    border-top: 4px solid hsl(0, 78%, 62%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem; 
+
+
+}
+
+.icon2 {
+    position: static;
+    align-self: flex-end;
+} 
+
+.cardthree {
+    background-color: white;
+    border-radius: 0.5rem;
+    border-top: 4px solid  hsl(34, 97%, 64%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem; 
+}
+
+.icon3{
+    position: static;
+    align-self: flex-end;
+} 
+
+.cardfour {
+    background-color: white;
+    border-radius: 0.5rem;
+    border-top: 4px solid hsl(212, 86%, 64%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem; 
+}
+ 
+.icon4 {
+    position: static;
+    align-self: flex-end;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;350;400;500;600;700;900&display=swap');
+
+body {
+    background-color: #fafafa;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 15px; 
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.Title {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.Title1 {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.Title2 {
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Title p {
+    max-width: 500px;
+}
+
+/* Card titles */
+.fourcards h2 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Four cards container */
+.fourcards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "card1 card2 card4"
+        "card1 card3 card4";
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Asignar áreas a cada tarjeta */
+.cardone   { grid-area: card1; border-top: 4px solid hsl(180, 62%, 55%); }
+.cardtwo   { grid-area: card2; border-top: 4px solid hsl(0, 78%, 62%); }
+.cardthree { grid-area: card3; border-top: 4px solid hsl(34, 97%, 64%); }
+.cardfour  { grid-area: card4; border-top: 4px solid hsl(212, 86%, 64%); }
+
+/* Tarjetas estilo */
+.fourcards article {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Iconos dentro de las tarjetas */
+.fourcards img {
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+/* Responsive para móvil: apila verticalmente */
+@media (max-width: 768px) {
+    .fourcards {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4";
+    }
+}
+
+ 
+
+
